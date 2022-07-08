@@ -1,14 +1,20 @@
-#include <stdio.h>
-#include <ctype.h>
-int main()
+#include "main.c"
+/**
+ *  _isupport - checkes upper case
+ *  @c: print int 
+ *  return: give 1 or 0
+ */
+
+int _isupport(int c)
 {
-    char c;
-
-    c = 'C';
-    printf("Return value when uppercase character %c is passed to isupper(): %d", c, isupper(c));
-
-    c = '+';
-    printf("\nReturn value when another character %c is passed to is isupper(): %d", c, isupper(c));
-
-   return 0;
+if  (c >= 'A' && c <= 'Z')
+{
+return (1);
 }
+
+else
+{
+return (0);
+}
+}
+

@@ -1,20 +1,14 @@
-#include "main.c"
+#include "main.h"
+
 /**
- *  _isupport - checkes upper case
- *  @c: print int 
- *  return: give 1 or 0
+ * _isupper - function that checks for uppercase characters
+ * @c: int type number
+ * Return: 1 if uppercase, else 0
  */
-
-int _isupport(int c)
+int _isupper(int c)
 {
-if  (c >= 'A' && c <= 'Z')
-{
-return (1);
-}
+	if (c > 64 && c < 91)
+		return (1);
 
-else
-{
-return (0);
+	return (0);
 }
-}
-
